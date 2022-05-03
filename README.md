@@ -22,13 +22,13 @@ the compilation result doesn't contain the underline as would be expected.
 The macro...
 
 ```fennel
-(highlight! MatchParen [:underline] {:bg "#262626")
+(highlight! MatchParen [:underline] {:bg "#262626"})
 ```
 
 ...should be expanded to:
 
 ```fennel
-(vim.api.nvim_set_hl 0 "MatchParen" {:bg "#262626" :underline true)
+(vim.api.nvim_set_hl 0 "MatchParen" {:bg "#262626" :underline true})
 ```
 
 ## Current result
@@ -36,11 +36,11 @@ The macro...
 The macro...
 
 ```fennel
-(highlight! MatchParen [:underline] {:bg "#262626")
+(highlight! MatchParen [:underline] {:bg "#262626"})
 ```
 
 ...is being expanded to:
 
 ```fennel
-(vim.api.nvim_set_hl 0 "MatchParen" {:bg "#262626")
+(vim.api.nvim_set_hl 0 "MatchParen" {:bg "#262626"})
 ```
